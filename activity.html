@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML Activity: Jujutsu Kaisen Gallery</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 800px; margin: 0 auto; padding: 1rem; line-height: 1.6; }
+    section { margin-bottom: 2.5rem; border-bottom: 1px solid #ccc; padding-bottom: 1rem; }
+    figure { margin: 1rem 0; }
+    img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      margin: 0.75rem 0;
+    }
+  </style>
+</head>
+<body>
+
+  <h1 id="main-heading">HTML Practical Application Activity: Jujutsu Kaisen Gallery</h1>
+
+  <nav id="page-nav">
+ 
+    <a href="#images">Images</a> |
+    <a href="#hyperlinks">Hyperlinks</a> |
+    <a href="#multimedia">Multimedia</a> |
+    <a href="#useful-tags">Useful Tags</a> |
+    <a href="#html-dom">HTML DOM</a>
+  </nav>
+
+ 
+  <section id="images">
+    <h2>1. Images</h2>
+
+    <img src="gojo.jpg" alt="Satoru Gojo with white hair and a black blindfold, smiling and pointing a finger against a red background" width="280">
+    <img src="toji.jpg" alt="Toji Fushiguro with dark hair and a black sleeveless shirt, gripping a sword handle over his shoulder" width="280">
+
+    <figure>
+      <img src="sukuna.jpg" alt="Sukuna grinning with a blood-red hand raised, surrounded by Jujutsu Kaisen characters and a cube with eyes" width="340">
+      <figcaption>Figure 1: Sukuna and other Jujutsu Kaisen characters, resized with the height attribute.</figcaption>
+    </figure>
+
+    <img src="high-five.jpg" alt="Two Jujutsu Kaisen students, Inumaki and Yuta, smiling as they high-five in a dark green alley" width="280">
+  </section>
+
+  
+  <section id="hyperlinks">
+    <h2>2. Hyperlinks</h2>
+    <ul>
+      <li><a href="dom-tree.png">Internal link: view my DOM tree screenshot (inside this project)</a></li>
+      <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">External link: MDN HTML documentation (opens in a new tab)</a></li>
+      <li><a href="mailto:yourname@example.com">Email link: send me an email</a></li>
+      <li><a href="#main-heading">Same-page anchor link: jump back to the top of the page</a></li>
+    </ul>
+  </section>
+
+
+  <section id="multimedia">
+    <h2>3. Multimedia</h2>
+
+    <h3>Audio</h3>
+    <audio controls>
+      <source src="media/sample-audio.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+
+    <h3>Video</h3>
+    <video controls width="480">
+      <source src="media/sample-video.mp4" type="video/mp4">
+      Your browser does not support the video element.
+    </video>
+  </section>
+
+
+  <section id="useful-tags">
+    <h2>4. Useful Tags</h2>
+
+
+    <blockquote>
+      The web is more a social creation than a technical one.
+      <br>&mdash; Tim Berners-Lee
+    </blockquote>
+
+   
+    <p>To create a link, use the <code>&lt;a href="..."&gt;</code> tag.</p>
+
+    
+    <table border="1" cellpadding="6">
+      <tr><th>Tag</th><th>Purpose</th></tr>
+      <tr><td>&lt;img&gt;</td><td>Displays an image</td></tr>
+      <tr><td>&lt;a&gt;</td><td>Creates a hyperlink</td></tr>
+    </table>
+
+   
+    <hr>
+    <p>&copy; 2026 My HTML Activity</p>
+  </section>
+
+
+  <section id="html-dom">
+    <h2>5. HTML DOM</h2>
+    <p>Elements with ids: <code>main-heading</code>, <code>page-nav</code>, <code>images</code>, <code>multimedia</code>, <code>useful-tags</code> and <code>html-dom</code>.</p>
+    <figure>
+      <img src="dom-tree.png" alt="Screenshot of the browser DevTools Elements panel showing the nested DOM tree of this page" width="600">
+      <figcaption>Figure 2: DevTools Elements panel showing the DOM tree.</figcaption>
+    </figure>
+  </section>
+
+
+</body>
+</html>
